@@ -5,7 +5,7 @@ import { ArrowRight, Dna, Cpu } from "lucide-react";
 import { PROFILE } from "@/app/data/data";
 import Section from "@/app/components/Section";
 
-const Panel = ({ icon: Icon, label, title, lines, tone }) => {
+const Panel = ({ label, title, lines }: { label: string, title: string, lines: string[] }) => {
     return (
         <motion.div
             initial={{ opacity: 0, x: 24 }}
@@ -23,7 +23,7 @@ const Panel = ({ icon: Icon, label, title, lines, tone }) => {
                     {title}
                 </div>
                 <ul className="mt-3 space-y-1.5 text-[15px] text-muted-foreground">
-                    {lines.map((l) => (
+                    {lines.map((l: string) => (
                         <li key={l} className="flex gap-2 font-light">
                             <span className="text-matrix">›</span>
                             <span>{l}</span>
@@ -41,9 +41,7 @@ export default function About() {
             <div className="flex gap-3 items-center m-3">
                 <div className="flex-4">
                     <Panel
-                        icon={Dna}
                         label="Input"
-                        tone="input"
                         title={PROFILE.transition.input.title}
                         lines={PROFILE.transition.input.lines}
                     />
@@ -54,9 +52,7 @@ export default function About() {
                 </div>
                 <div className="flex-4">
                     <Panel
-                        icon={Cpu}
                         label="Output"
-                        tone="output"
                         title={PROFILE.transition.output.title}
                         lines={PROFILE.transition.output.lines}
                     />

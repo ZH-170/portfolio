@@ -2,15 +2,10 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { Project } from "@/lib/types";
 
-// const categoryStyles = {
-//   "Full-Stack": { ring: "ring-matrix/40", tag: "text-matrix", dot: "bg-matrix" },
-//   AI: { ring: "ring-quantum/50", tag: "text-quantum", dot: "bg-quantum" },
-//   Algorithmic: { ring: "ring-quantum/40", tag: "text-quantum", dot: "bg-quantum" },
-// };
-
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project }:{ project: Project }) {
     const reduce = useReducedMotion();
 
     return (
@@ -69,7 +64,7 @@ export default function ProjectCard({ project }) {
 
             {/* Tags */}
             <div className="mt-auto flex flex-wrap border-b border-txtclr-d0/30 pb-3">
-                {project.tags.map((tag) => (
+                {project.tags.map((tag: string) => (
                     <span
                         key={tag}
                         className="border border-accent-d0/20 rounded-sm px-2 py-1 mx-1 my-1 text-[13px] text-accent-d0/50"

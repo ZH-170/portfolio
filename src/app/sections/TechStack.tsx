@@ -4,9 +4,8 @@ import { motion, useReducedMotion } from "framer-motion";
 import { TECH_STACK } from "@/app/data/data";
 import Section from "@/app/components/Section";
 
-const StackColumn = ({ title, items, accent, caption }) => {
+const StackColumn = ({ title, items, caption }: { title: string, items: { name: string, level: number }[], caption: string }) => {
   const reduce = useReducedMotion();
-  const color = accent === "matrix" ? "matrix" : "quantum";
 
   return (
     <div className="rounded-sm border border-txtcolor-d0/20 bg-txtclr-d0/3 p-6">
@@ -27,7 +26,7 @@ const StackColumn = ({ title, items, accent, caption }) => {
       </div>
 
       <ul className="mt-6 space-y-4">
-        {items.map((t, i) => (
+        {items.map((t, i: number) => (
           <li key={t.name}>
             <div className="flex items-baseline justify-between text-[13px]">
               <span className="text-txtclr-d0">{t.name}</span>
@@ -60,13 +59,11 @@ export default function TechStack() {
           caption="// Professional"
           title="Professional Stack"
           items={professional}
-          accent="matrix"
         />
         <StackColumn
           caption="// Algorithmic"
           title="Algorithmic Foundation"
           items={algorithmic}
-          accent="quantum"
         />
       </div>
     </Section>
