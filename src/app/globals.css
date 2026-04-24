@@ -1,15 +1,123 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --color-primary: 100;
+    --color-primary-sat: 70;
+    --color-accent: 130;
+    --color-accent-sat: 130;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+    /* Background Colours */
+    --color-bgclr-l0: hsl(var(--color-primary) 15 80);
+    --color-bgclr-l1: hsl(var(--color-primary) 15 85);
+    --color-bgclr-l2: hsl(var(--color-primary) 15 90);
+
+    --color-bgclr-d0: hsl(var(--color-primary) 5 10);
+    --color-bgclr-d1: hsl(var(--color-primary) 15 15);
+    --color-bgclr-d2: hsl(var(--color-primary) 15 20);
+
+    /* Text Colours */
+    --color-txtclr-l0: hsl(var(--color-primary) 15 5);
+    --color-txtclr-l1: hsl(var(--color-primary) 15 20);
+    --color-txtclr-l2: hsl(var(--color-primary) 15 35);
+    --color-txtclr-l3: hsl(var(--color-primary) 15 50);
+
+    --color-txtclr-d0: hsl(var(--color-primary) 15 95);
+    --color-txtclr-d1: hsl(var(--color-primary) 15 80);
+    --color-txtclr-d2: hsl(var(--color-primary) 15 65);
+    --color-txtclr-d3: hsl(var(--color-primary) 15 50);
+
+    /* Surface Colours */
+    --color-surface-l0: hsl(var(--color-primary) 40 90);
+    --color-surface-l1: hsl(var(--color-primary) 40 83);
+    --color-surface-l2: hsl(var(--color-primary) 40 76);
+    --color-surface-l3: hsl(var(--color-primary) 40 70);
+    --color-surface-l4: hsl(var(--color-primary) 40 63);
+    --color-surface-l5: hsl(var(--color-primary) 40 56);
+    --color-surface-l6: hsl(var(--color-primary) 40 50);
+
+    --color-surface-d0: hsl(var(--color-primary) 40 10);
+    --color-surface-d1: hsl(var(--color-primary) 40 17);
+    --color-surface-d2: hsl(var(--color-primary) 40 24);
+    --color-surface-d3: hsl(var(--color-primary) 40 30);
+    --color-surface-d4: hsl(var(--color-primary) 40 37);
+    --color-surface-d5: hsl(var(--color-primary) 40 44);
+    --color-surface-d6: hsl(var(--color-primary) 40 50);
+
+    /* Primary Colours */
+    --color-primary-l0: hsl(var(--color-primary) var(--color-primary-sat) 40);
+    --color-primary-l1: hsl(var(--color-primary) var(--color-primary-sat) 50);
+    --color-primary-l2: hsl(var(--color-primary) var(--color-primary-sat) 60);
+    --color-primary-l3: hsl(var(--color-primary) var(--color-primary-sat) 70);
+    --color-primary-l4: hsl(var(--color-primary) var(--color-primary-sat) 80);
+
+    --color-primary-d0: hsl(var(--color-primary) var(--color-primary-sat) 80);
+    --color-primary-d1: hsl(var(--color-primary) var(--color-primary-sat) 70);
+    --color-primary-d2: hsl(var(--color-primary) var(--color-primary-sat) 60);
+    --color-primary-d3: hsl(var(--color-primary) var(--color-primary-sat) 50);
+    --color-primary-d4: hsl(var(--color-primary) var(--color-primary-sat) 40);
+
+    /* Accent Colours */
+    --color-accent-d0: hsl(var(--color-accent) var(--color-accent-sat) 90);
+    --color-accent-d1: hsl(var(--color-accent) var(--color-accent-sat) 80);
+    --color-accent-d2: hsl(var(--color-accent) var(--color-accent-sat) 70);
+    --color-accent-d3: hsl(var(--color-accent) var(--color-accent-sat) 60);
+    --color-accent-d4: hsl(var(--color-accent) var(--color-accent-sat) 50);
+
+    --color-blue-light: hsl(210 50 60);
+    --color-blue: hsl(210 50 50);
+    --color-blue-dark: hsl(210 50 40);
+
+    --color-violet-light: hsl(270 50 60);
+    --color-violet: hsl(270 50 60);
+    --color-violet-dark: hsl(270 50 60);
+
+    /* Semantic Colours */
+    --color-success: hsl(120 100 50);
+    --color-warning: hsl(55 100 50);
+    --color-danger: hsl(0 100 50);
+
+    /* Success */
+    --color-txtsuccess-l0: hsl(120, 100, 10);
+    --color-txtsuccess-l1: hsl(120, 100, 20);
+    --color-success-l0: hsl(120 100 65);
+    --color-success-l1: hsl(120 100 75);
+    --color-success-l2: hsl(120 100 85);
+
+    --color-txtsuccess-d0: hsl(120, 100, 90);
+    --color-txtsuccess-d1: hsl(120, 100, 80);
+    --color-success-d0: hsl(120 100 35);
+    --color-success-d1: hsl(120 100 25);
+    --color-success-d2: hsl(120 100 15);
+
+    /* Warning */
+    --color-txtwarning-l0: hsl(55, 100, 10);
+    --color-txtwarning-l1: hsl(55, 100, 20);
+    --color-warning-l0: hsl(55 100 65);
+    --color-warning-l1: hsl(55 100 75);
+    --color-warning-l2: hsl(55 100 85);
+
+    --color-txtwarning-d0: hsl(55, 100, 90);
+    --color-txtwarning-d1: hsl(55, 100, 80);
+    --color-warning-d0: hsl(55 100 35);
+    --color-warning-d1: hsl(55 100 25);
+    --color-warning-d2: hsl(55 100 15);
+
+    /* Danger */
+    --color-txtdanger-l0: hsl(0, 100, 10);
+    --color-txtdanger-l1: hsl(0, 100, 20);
+    --color-danger-l0: hsl(0 100 65);
+    --color-danger-l1: hsl(0 100 75);
+    --color-danger-l2: hsl(0 100 85);
+
+    --color-txtdanger-d0: hsl(0, 100, 10);
+    --color-txtdanger-d1: hsl(0, 100, 20);
+    --color-danger-d0: hsl(0 100 35);
+    --color-danger-d1: hsl(0 100 25);
+    --color-danger-d2: hsl(0 100 15);
 }
 
 @media (prefers-color-scheme: dark) {
