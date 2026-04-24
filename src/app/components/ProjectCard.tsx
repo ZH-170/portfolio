@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 // const categoryStyles = {
