@@ -10,7 +10,7 @@ import Contact from "@/app/sections/Contact";
 
 export default function Home() {
     return (
-        <div className="dark relative min-h-screen bg-bgclr-d0 text-foreground">
+        <div className="dark relative min-h-screen bg-bgclr-d0 text-txtclr-d0">
             <TopBar />
             <main>
                 <Hero />
