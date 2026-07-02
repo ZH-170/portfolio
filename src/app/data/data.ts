@@ -9,17 +9,22 @@ export const PROFILE = {
     //focus:
       //  "Rigorous CS student at USyd — mastering the Next.js & Supabase ecosystem while applying a logic-first, algorithmic foundation to every system I build.",
     focus: "Computer Science student at the University of Sydney — with a strong algorithmic foundation developed through competitive programming experience. Currently focused on building modern web applications using the Next.js and React framework.",
-    bio:
-        "My foundation is in competitive programming, where I was a two-time APIO national representative and selected for IOI and IMO training camps. This experience built a strong algorithmic and problem-solving mindset, which led me to explore broader areas of programming. I am currently focused on web development, scaling into the Next.js ecosystem to build modern applications and transition toward production-level systems.",
-    seeking: "Open to software developer internships where rapid learning velocity and technical rigour are valued.",
+    bio: [
+
+        // "My foundation is in competitive programming, where I was a two-time APIO national representative and selected for IOI and IMO training camps. This experience built a strong algorithmic and problem-solving mindset, which led me to explore broader areas of programming. I am currently focused on web development, scaling into the Next.js ecosystem to build modern applications and transition toward production-level systems.",
+        // "My foundation is in competitive programming, where I first exposed to coding. I was first introduced to competitive programming in 2018, and after finding myself interested in Data Structures and Algorithms, I started to learn more, bringing me to my peak in competitive programming in 2023 and 2024, where I won various competitions. After graduating from high school, I started self-learning web development, and got an internship in web development. Currently trying to expose myself to new fields in computer science, such as system programming and cybersecurity.",
+        // "My coding journey began in 2022, when I was first introduced to competitive programming. After I was exposed to Data Structures and Algorithms, I fell deep in love with it, and spent years sharpening my problem-solving skills, which brings me to my peak during 2023 and 2024, when I won several national competitions. After graduating high school, I pivoted toward building practical software, teaching myself web development and securing an internship in the field. Currently, I am trying to expose myself to new fields in Computer Science, such as System Programming and Cybersecurity.",
+        "My coding journey began in 2022, when I was first introduced to competitive programming. After being exposed to Data Structures and Algorithms, I fell in love with the field and spent years sharpening my problem-solving skills, culminating in a peak during 2023 and 2024 when I won several national competitions. ",
+        "After graduating high school, I pivoted toward building practical software, teaching myself web development and securing an internship in the field. Currently, I am expanding my horizons by exploring new domains in computer science, such as systems programming and cybersecurity.",
+    ],
     transition: {
         input: {
             label: "FOUNDATION",
             title: "Competitive Programming",
             lines: [
-                "algorithms.master(C++)",
-                "olympiad.represent(APIO, 2x)",
-                "codeforces.grind()",
+                "programming_language(C++)",
+                "DSA_enthusiast.activate()",
+                "codeforces",
             ],
         },
         output: {
