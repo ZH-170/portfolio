@@ -60,9 +60,9 @@ export default function Achievements() {
                         </div>
                     </li>
                 ))}
-                <li>[to be continue...]</li>
+                <li>[to be continued...]</li>
                 <li className="">
-                    <span className="font-light text-accent-d1">guess@portfolio</span> :~$ what{"'"}s next
+                    <span className="font-light text-accent-d1">guest@portfolio</span> :~$ what{"'"}s next
                             <motion.span 
                                 animate={{ opacity: [1, 1, 0, 0] }}
                                 transition={{
