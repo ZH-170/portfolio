@@ -41,7 +41,7 @@ export default function About() {
             <div className="flex gap-3">
                 <div className="flex-6 border border-txtclr-d0/30 bg-txtclr-d0/5 rounded-sm py-8 px-6 m-3 font-thin">
                     {PROFILE.bio.map(t => (
-                        <p key={t} className="p-2 text-[18px] font-medium">{t}</p>
+                        <p key={t} className="p-2 text-justify text-[18px] font-medium">{t}</p>
                     ))}
                 </div>
 

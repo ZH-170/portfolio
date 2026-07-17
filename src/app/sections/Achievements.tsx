@@ -10,7 +10,7 @@ export default function Achievements() {
     const pid = "2048";
 
     return (
-        <Section id="credentials" index="04" subtitle="credentials.log" title="Tail the achievements.">
+        <Section id="credentials" index="04" subtitle="credentials.log" title="The Achievements">
 
             {/* WinBar */}
             <div className="flex items-center justify-between border border-txtclr-d0/30 bg-black/70 px-4 py-1.5">
@@ -33,7 +33,8 @@ export default function Achievements() {
             </div>
 
             {/* Content */}
-            <ul className="border border-txtclr-d0/30 p-2">
+            <div className="border border-txtclr-d0/30 p-2">
+            <ul className="max-h-116 overflow-y-auto scroll-smooth scrollbar-thumb-transparent scrollbar-track-sky-100 ">
                 {ACHIEVEMENTS.map((a, i) => (
                     <li
                         key={i}
@@ -76,6 +77,7 @@ export default function Achievements() {
 
                 </li>
             </ul>
+            </div>
             
         </Section>
     );

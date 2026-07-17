@@ -10,7 +10,7 @@ export default function Timeline() {
     const reduce = useReducedMotion();
     
     return (
-        <Section id="timeline" index="05" subtitle="experience & education" title="The journey so far.">
+        <Section id="timeline" index="05" subtitle="experience & education" title="The Journey">
             <ol className="relative ml-3 border-l border-accent-d2/80">
                 {TIMELINE.map((t, i) => {
                     const Icon = t.isAcademic ? GraduationCap : Code2;

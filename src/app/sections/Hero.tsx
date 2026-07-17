@@ -20,7 +20,7 @@ export default function Hero() {
                 {/* Left: headline */}
                 {/* Headline 2/ staggered reveal */}
                 <h1 className="flex flex-col col-span-6">
-                    <span className="opacity-60 text-3xl"><span className="text-accent-d2">$ </span>whoami</span>
+                    <span className="opacity-60 text-3xl"><span className="text-accent-d2">$ </span>who_am_i</span>
                     
                     <div className={`${gelasio.className} pt-10 pb-8`}>
                         {name.map((c, i) => (
@@ -46,7 +46,7 @@ export default function Hero() {
                             duration: 0.5,
                             delay: 1.2,
                         }}
-                        className="font-light mb-10 text-accent-d1"
+                        className="font-normal text-justify mb-10 text-accent-d1"
                     >
                         {PROFILE.tagline}{" "}
                         <span className="text-white">{PROFILE.focus}</span>

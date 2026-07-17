@@ -8,7 +8,7 @@ export const PROFILE = {
     //
     //focus:
       //  "Rigorous CS student at USyd — mastering the Next.js & Supabase ecosystem while applying a logic-first, algorithmic foundation to every system I build.",
-    focus: "I enjoy solving challenging problems and continuously exploring new areas of knowledge. With a background in competitive programming and mathematics, I have developed strong analytical and problem-solving skills, which I continue to strengthen through projects spanning computer science, the life sciences, and other interdisciplinary fields.",
+    focus: "I enjoy solving challenging problems and continuously exploring new areas of knowledge. With a background in competitive programming and mathematics, I have developed strong analytical and problem-solving skills, which I continue to strengthen through projects spanning computer science, life science, and other interdisciplinary fields.",
     bio: [
 
         // "My foundation is in competitive programming, where I was a two-time APIO national representative and selected for IOI and IMO training camps. This experience built a strong algorithmic and problem-solving mindset, which led me to explore broader areas of programming. I am currently focused on web development, scaling into the Next.js ecosystem to build modern applications and transition toward production-level systems.",
@@ -89,7 +89,7 @@ export const PROJECTS = [
         title: "Personal Library",
         description:
             "A personal library to keep the books and movies that you like the most.",
-        tags: ["Python", "PyMOL", "Bioinformatics"],
+        tags: ["Next.js", "React", "Prisma", "PostgreSQL"],
         category: "Full-Stack",
         metric: "Under development",
         links: {},

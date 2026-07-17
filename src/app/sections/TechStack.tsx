@@ -53,7 +53,7 @@ export default function TechStack() {
   const algorithmic = TECH_STACK.filter((t) => t.category === "Algorithmic");
 
   return (
-    <Section id="stack" index="02" subtitle="tech stack" title="The toolkit">
+    <Section id="stack" index="02" subtitle="tech stack" title="The Toolkit">
       <div className="grid gap-6 md:grid-cols-2">
         <StackColumn
           caption="// Professional"

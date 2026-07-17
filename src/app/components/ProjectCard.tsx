@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { Project } from "@/lib/types";
+import clsx from "clsx";
 
 export default function ProjectCard({ project }:{ project: Project }) {
     const reduce = useReducedMotion();
@@ -15,7 +16,13 @@ export default function ProjectCard({ project }:{ project: Project }) {
             viewport={{ once: false, margin: "-60px" }}
             transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
             whileHover={reduce ? {} : { y: -4 }}
-            className="group relative min-h-120 flex flex-col flex-1 bg-txtclr-d0/5 rounded-sm p-5 border border-txtclr-d0/30"
+            className={clsx(
+                "group relative min-h-120 flex flex-col flex-1 bg-txtclr-d0/5 rounded-sm p-5 border border-txtclr-d0/30",
+                // {
+                //     "bg-txtclr-d0/5": project.metric === "Done",
+                //     "bg-txtclr-d0/5": project.metric !== "Done",
+                // },
+            )}
         >
             {/* Scanning laser on hover */}
             <div 
@@ -43,7 +50,9 @@ export default function ProjectCard({ project }:{ project: Project }) {
                         </span>
                     </span>
                 </div>
-                <ArrowUpRight className="absolute right-3 opacity-60 group-hover:text-accent-d4 group-hover:opacity-100" />
+                {
+                    // <ArrowUpRight className="absolute right-3 opacity-60 group-hover:text-accent-d4 group-hover:opacity-100" />
+                }
             </div>
 
             {/* Title */}
@@ -57,8 +66,22 @@ export default function ProjectCard({ project }:{ project: Project }) {
             </h3>
 
             {/* Metric */}
-            <div className="text-[13px] mt-3 pl-2 pr-4 py-1 rounded-lg flex border border-txtclr-d0/30 w-fit">
-                <span className="text-accent-d1 ml-1 mr-3">◆</span>
+            <div className=
+                {clsx(
+                    "text-[13px] mt-3 pl-2 pr-4 py-1 rounded-lg flex border border-txtclr-d0/30 w-fit",
+                    {
+                        "text-accent-d1 font-bold": project.metric === "Done",
+                    },
+                )}
+            >
+                <span className=
+                    {clsx(
+                        "ml-1 mr-3",
+                        {
+                            "text-accent-d1 font-bold": project.metric === "Done",
+                        },
+                    )}
+                >◆</span>
                 {project.metric}
             </div>
 
