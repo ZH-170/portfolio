@@ -14,10 +14,10 @@ export default function Contact() {
                             {"//"} availability
                         </div>
                         <div className="mt-3 font-sans text-xl font-semibold leading-snug text-accent-d0">
-                            Actively seeking a software developer internship.
+                            Actively seeking technology opportunities.
                         </div>
                         <div className="mt-4 text-[13px] text-txtclr-d0 font-light">
-                            CS student with a strong algorithmic foundation and a focus on practical software engineering. Primarily working with Next.js. Open to internship opportunities in production environments that value strong fundamentals and engineering rigor.
+                            My interests span a wide range of technical fields, so I'm open to opportunities across software engineering, AI, systems programming, cybersecurity, and other areas of technology. I'm also excited by interdisciplinary work that combines computer science with biology or chemistry. If you think I'd be a good fit for your team or project, I'd love to connect and have a chat!
                         </div>
                     </div>
 

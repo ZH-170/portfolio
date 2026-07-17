@@ -32,7 +32,7 @@ export default function Timeline() {
                                 <div className="flex flex-wrap items-center gap-3">
                                     <span className="inline-flex items-center gap-1.5 rounded-sm border border-txtclr-d0/20 bg-bgclr-d0 px-2 py-0.5 text-[10px] uppercase tracking-[0.22em] text-txtclr-d0">
                                         <Icon className="h-3 w-3 text-accent-d1" />
-                                        {t.isAcademic ? "academic" : "engineering"}
+                                        {t.isAcademic ? "academic" : "industry"}
                                     </span>
                                     <span className="text-[11px] text-txtclr-d0/50">
                                         {t.period}

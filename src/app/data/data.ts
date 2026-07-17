@@ -3,12 +3,12 @@ export const PROFILE = {
     name: "CS @ USyd",
     location: "Sydney, AU",
     status: "Seeking Software Internship",
-    tagline: "Logic-first engineer bridging elite competitive programming with industrial full-stack development.",
+    tagline: "Curious and analytical, with a strong passion for science and technology.",
     //tagline: "Aspiring software engineer aiming to become a full-stack developer, focused on modern web development while exploring interests in AI/ML and cybersecurity.",
     //
     //focus:
       //  "Rigorous CS student at USyd — mastering the Next.js & Supabase ecosystem while applying a logic-first, algorithmic foundation to every system I build.",
-    focus: "Computer Science student at the University of Sydney — with a strong algorithmic foundation developed through competitive programming experience. Currently focused on building modern web applications using the Next.js and React framework.",
+    focus: "I enjoy solving challenging problems and continuously exploring new areas of knowledge. With a background in competitive programming and mathematics, I have developed strong analytical and problem-solving skills, which I continue to strengthen through projects spanning computer science, the life sciences, and other interdisciplinary fields.",
     bio: [
 
         // "My foundation is in competitive programming, where I was a two-time APIO national representative and selected for IOI and IMO training camps. This experience built a strong algorithmic and problem-solving mindset, which led me to explore broader areas of programming. I am currently focused on web development, scaling into the Next.js ecosystem to build modern applications and transition toward production-level systems.",
@@ -22,18 +22,18 @@ export const PROFILE = {
             label: "FOUNDATION",
             title: "Competitive Programming",
             lines: [
-                "programming_language(C++)",
-                "DSA_enthusiast.activate()",
-                "codeforces",
+                "Codeforces | 1456 (Specialist)",
+                "Uyd DSA Course | 95% WAM",
+                "Core language | C++",
             ],
         },
         output: {
             label: "APPLICATION",
             title: "Industrial Engineering",
             lines: [
-                "nextjs.ship(production)",
-                "fullstack_architecture.build()",
-                "internship.acquire(2025)",
+                "Software Developer Intern | AutoCount Sdn Bhd",
+                "Automation Engineer | Acceler Technology",
+                "First prize | Hack Node Australia 2025",
             ],
         },
     },
@@ -125,27 +125,35 @@ export const ACHIEVEMENTS = [
 
 export const TIMELINE = [
     {
-        period: "2025 — Present",
+        period: "July 2025 — Present",
         role: "B.Sc. | Computer Science | Biochemistry and Molecular Biology",
         institution: "The University of Sydney",
         description:
-            "Rigorous full-time CS degree alongside active project development. Won 1st prize at the USyd hackathon in semester one. Currently mastering the Next.js & Supabase ecosystem — targeting a software developer internship.",
+            "Curious and analytical with a strong passion for science and technology, I enjoy exploring diverse areas of computer science, including web development, systems programming, cybersecurity, and artificial intelligence, while also pursuing interests in quantitative trading and the life sciences, particularly biology and chemistry. My background in competitive programming and mathematics has strengthened my analytical thinking, problem-solving abilities, and aptitude for tackling complex technical challenges.",
         isAcademic: true,
     },
     {
-        period: "2025",
-        role: "Software developer intern",
-        institution: "AutoCount Sdn Bhd",
+        period: "February 2025 — December 2025",
+        role: "Automation & Backend Engineer",
+        institution: "Acceler Technology",
         description:
-            "Contribute to maintaining and improving existing software systems. Developed and modified features using React and C# to support application functionality.",
+            "Acceler Technology is a Malaysian student-founded startup focused on building innovative technology solutions. I contributed to the ongoing development and enhancement of its flagship product, Estate Boost Copilot. I developed automatino pipelines and backend systems to support AI-driven workflows and business operations. I also designed and implemented backend logic to improve system reliability, scalability, and performance.",
         isAcademic: false,
     },
     {
-        period: "2019–2024",
+        period: "January 2025 — June 2025",
+        role: "Software Developer Intern",
+        institution: "AutoCount Sdn Bhd",
+        description:
+            "AutoCount is a leading accounting software developer in Malaysia that delivers high-quality business application software that meets the unique needs of SMEs across different industry. My main job is to fix software bugs and implement new features for AutoCount's web-based business applications, improving functionality and user experience. I also assisted in developing an AI-powered speech-to-text pipeline by integrating and evaluating state-of-the-art speech recognition models.",
+        isAcademic: false,
+    },
+    {
+        period: "2019 — 2024",
         role: "Science Stream Student",
         institution: "Hin Hua High School, Malaysia",
         description:
-            "Rigorous full-time CS degree alongside active project development. Won 1st prize at the USyd hackathon in semester one. Currently mastering the Next.js & Supabase ecosystem — targeting a software developer internship.",
+            "I completed the science stream in high school, graduating with straight A's in the Unified Examination Certificate (UEC) and ranking among the top five students in the science stream. Beyond academics, I actively participated in national mathematics and informatics competitions, including the Malaysian selection programmes for the International Mathematical Olympiad (IMO) and the International Olympiad in Informatics (IOI), where I received multiple awards and distinctions.",
         isAcademic: true,
     },
 ];

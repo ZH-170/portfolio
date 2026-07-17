@@ -46,23 +46,23 @@ export default function About() {
                 </div>
 
                 {
-                <div className="flex-2 border rounded-sm py-8 px-6 mx-5 my-3">
-                    <div className="text-[12px] uppercase opacity-60 mb-3">
-                        {'//'} operating_principle
-                    </div>
-                    <div className="text-[20px] font-semibold text-accent-d0">
-                        Logic first. Build. Scale.
-                    </div>
-                    <div className="mt-5 space-y-2 text-[12px] text-muted-foreground">
-                        {["Algorithmic foundations → production code", "Rapid learning velocity", "Rigour under constraints"].map(t => (
-                            <div key={t} className="flex items-start gap-2">
-                                <span className="text-matrix">◆</span>
-                                <span>{t}</span>
-                            </div>
-                        ))}
-                    </div>
-
-                </div>
+                // <div className="flex-2 border rounded-sm py-8 px-6 mx-5 my-3">
+                //     <div className="text-[12px] uppercase opacity-60 mb-3">
+                //         {'//'} operating_principle
+                //     </div>
+                //     <div className="text-[20px] font-semibold text-accent-d0">
+                //         Logic first. Build. Scale.
+                //     </div>
+                //     <div className="mt-5 space-y-2 text-[12px] text-muted-foreground">
+                //         {["Algorithmic foundations → production code", "Rapid learning velocity", "Rigour under constraints"].map(t => (
+                //             <div key={t} className="flex items-start gap-2">
+                //                 <span className="text-matrix">◆</span>
+                //                 <span>{t}</span>
+                //             </div>
+                //         ))}
+                //     </div>
+                //
+                // </div>
                 }
             </div>
             <div className="flex gap-3 items-center m-3">

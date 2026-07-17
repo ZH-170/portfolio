@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { PROFILE } from "@/app/data/data";
 import WinBar from "@/app/components/WinBar";
 import { ArrowDownRight, MapPin, Terminal } from "lucide-react";
+import { gelasio } from "@/app/ui/fonts";
 
 export default function Hero() {
     
@@ -21,7 +22,7 @@ export default function Hero() {
                 <h1 className="flex flex-col col-span-6">
                     <span className="opacity-60 text-3xl"><span className="text-accent-d2">$ </span>whoami</span>
                     
-                    <div className="pt-10 pb-8">
+                    <div className={`${gelasio.className} pt-10 pb-8`}>
                         {name.map((c, i) => (
                             <motion.span
                                 key={i}
@@ -45,10 +46,10 @@ export default function Hero() {
                             duration: 0.5,
                             delay: 1.2,
                         }}
-                        className="font-light mb-10"
+                        className="font-light mb-10 text-accent-d1"
                     >
                         {PROFILE.tagline}{" "}
-                        <span className="text-accent-d1">{PROFILE.focus}</span>
+                        <span className="text-white">{PROFILE.focus}</span>
                     </motion.p>
 
                     <motion.div
